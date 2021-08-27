@@ -21,7 +21,7 @@
 # 编译生成
 
 执行make之前，确保protobuf环境已经安装成功，按照下面顺序操作：
-* 执行build.sh
+* 如果想测试服务器性能，先进入example/qps_test目录下执行build.sh
 * 执行make
 
 
