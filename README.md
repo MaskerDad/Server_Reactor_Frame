@@ -21,13 +21,18 @@
 # 编译生成
 
 执行make之前，确保protobuf环境已经安装成功，按照下面顺序操作：
-* 如果想测试服务器性能，先进入example/qps_test目录下执行build.sh
+* 如果想测试服务器性能，先进入example/qps_test目录下执行build.sh（当然你也可以使用webbench类似的压测工具）
 * 执行make
+
+
+
+<br/>
+<br/>
 
 
 # 性能测试
 
-客户端是开启一个线程进行测试，平均每秒服务端会响应8700次左右。
+如果客户端开启一个线程进行测试，平均每秒服务端会响应8700次左右。
 ```cpp
 $ ./client 1
 msg_router init...
